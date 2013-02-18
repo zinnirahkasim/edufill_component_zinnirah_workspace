@@ -11,7 +11,7 @@
     		<visual>
       			<origin xyz="1.041 0.779 0"/>
       			<geometry>
-        			<box size="1 1 0.0001" />
+        			<box size="0.1 0.1 0.0001" />
       			</geometry>
 			<material name="surface">
 				<texture filename="S2.jpg"/>
@@ -20,7 +20,7 @@
     		<collision>
       			<origin xyz="1.041 0.779 0"/>
       		<geometry>
-        		<box size="1 1 0.0001" />
+        		<box size="0.1 0.1 0.0001" />
       		</geometry>
     		</collision>
   	</link>	
