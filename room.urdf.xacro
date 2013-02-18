@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+
+<robot name="room">
+
+	<link name="room">
+		<visual>
+			<geometry>
+				<mesh filename= "room.dae"/>
+			</geometry>
+		</visual>
+	</link>
+</robot>
