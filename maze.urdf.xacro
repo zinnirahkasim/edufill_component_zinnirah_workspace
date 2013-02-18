@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+
+<robot name="maze">
+
+	<link name="maze">
+		<visual>
+			<geometry>
+				<mesh filename= "maze_wide.dae"/>
+			</geometry>
+		</visual>
+	</link>
+</robot>
