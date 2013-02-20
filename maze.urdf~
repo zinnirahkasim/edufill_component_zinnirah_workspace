@@ -11,12 +11,12 @@
 		</inertial>
 		<collision name="room_collision">
             		<geometry>
-                		<mesh filename="/home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/maze_wide.dae" scale="1 1 1"/>
+                		<mesh filename="$ find maze_wide.dae" scale="1 1 1"/>
             		</geometry>
         	</collision>
 		<visual>
 			<geometry>
-				<mesh filename= "/home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/maze_wide.dae" scale="1 1 1"/>
+				<mesh filename= "$ find maze_wide.dae" scale="1 1 1"/>
 			</geometry>
 		</visual>
 	</link>

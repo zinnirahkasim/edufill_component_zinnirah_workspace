@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 
 
-<robot name="maze" static="true">
+<robot name="room" static="true">
 
-	<link name="maze">
+	<link name="room">
 		<inertial>
 			<origin xyz="0 0 1"/>
 			<mass value="10.0"/>
@@ -11,14 +11,18 @@
 		</inertial>
 		<collision name="room_collision">
             		<geometry>
-                		<mesh filename="/home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/maze_wide.dae" scale="1 1 1"/>
+                		<mesh filename="room.dae" scale="1 1 1"/>
             		</geometry>
         	</collision>
 		<visual>
 			<geometry>
-				<mesh filename= "/home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/maze_wide.dae" scale="1 1 1"/>
+				<mesh filename= "room.dae" scale="1 1 1"/>
 			</geometry>
 		</visual>
 	</link>
-	</link>
+
+  <gazebo reference="room">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+  </gazebo>
 </robot>

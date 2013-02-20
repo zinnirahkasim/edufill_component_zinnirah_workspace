@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 
-<robot name="D2">
+<robot name="S2">
 
-	<link name="D2">
+	<link name="S2">
     		<inertial>
-      			<origin xyz="-0.99 0.737 0" /> 
+      			<origin xyz="1.041 0.779 0" /> 
       			<mass value="10.0" />
       			<inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
     		</inertial>
     		<visual>
-      			<origin xyz="-0.99 0.737 0"/>
+      			<origin xyz="1.041 0.779 0"/>
       			<geometry>
         			<box size="0.5 0.5 0.0001" />
       			</geometry>
 			<material name="surface">
-				<texture filename="D2.jpg"/>
+				<texture filename="S2.jpg"/>
 			</material>
     		</visual>
     		<collision>
-      			<origin xyz="-0.99 0.737 0"/>
+      			<origin xyz="1.041 0.779 0"/>
       		<geometry>
         		<box size="0.5 0.5 0.0001" />
       		</geometry>
