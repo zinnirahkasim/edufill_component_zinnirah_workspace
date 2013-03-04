@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+
+<robot name="room" static="true">
+
+<xacro:macro name="room" params="name">
+
+	<link name="room">
+		<inertial>
+			<origin xyz="0 0 1"/>
+			<mass value="10.0"/>
+			<inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+		</inertial>
+		<collision name="room_collision">
+            		<geometry>
+                		<mesh filename="package://home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/room.dae" scale="1 1 1"/>
+            		</geometry>
+        	</collision>
+		<visual>
+			<geometry>
+				<mesh filename= "package://home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/room.dae" scale="1 1 1"/>
+			</geometry>
+		</visual>
+	</link>
+
+  <gazebo reference="room">
+	<material>Gazebo/White</material>
+	<selfCollide>false</selfCollide>
+  </gazebo>
+
+</xacro:macro>
+
+<xacro:room name="room" />
+</robot>
