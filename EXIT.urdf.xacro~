@@ -16,7 +16,7 @@
         			<box size="0.5 0.5 0.0001" />
       			</geometry>
 			<material name="surface">
-				<texture filename="package://edufill_gazebo_world/common/worlds/EXIT.jpg"/>
+				<texture filename="EXIT.jpg"/>
 			</material>
     		</visual>
     		<collision>

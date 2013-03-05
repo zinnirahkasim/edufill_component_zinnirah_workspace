@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
 
 
-<robot name="maze" static="true">
+<robot name="edufill_maze" static="true">
 
-	<link name="maze">
+<xacro:macro name="edufill_maze" params="name">
+
+	<link name="edufill_maze">
 		<inertial>
 			<origin xyz="0 0 1"/>
 			<mass value="10.0"/>
@@ -11,14 +13,18 @@
 		</inertial>
 		<collision name="room_collision">
             		<geometry>
-                		<mesh filename="/home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/maze_wide.dae" scale="1 1 1"/>
+                		<mesh filename="package://edufill_gazebo_world/common/worlds/edufill_maze.dae" scale="1 1 1"/>
             		</geometry>
         	</collision>
 		<visual>
 			<geometry>
-				<mesh filename= "/home/zinnirah/ros/workspace/edufill_component_zinnirah_workspace/maze_wide.dae" scale="1 1 1"/>
+				<mesh filename= "package://edufill_gazebo_world/common/worlds/edufill_maze.dae" scale="1 1 1"/>
 			</geometry>
 		</visual>
 	</link>
-	</link>
+
+</xacro:macro>
+
+<xacro:edufill_maze name="edufill_maze" />
+
 </robot>

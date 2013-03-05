@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 
-<robot name="D2">
+<robot name="edufill_D2">
 
-	<link name="D2">
+<xacro:macro name="edufill_D2" params="name">
+
+	<link name="edufill_D2">
     		<inertial>
       			<origin xyz="-0.99 0.737 0" /> 
       			<mass value="10.0" />
@@ -14,7 +16,7 @@
         			<box size="0.5 0.5 0.0001" />
       			</geometry>
 			<material name="surface">
-				<texture filename="D2.jpg"/>
+				<texture filename="package://edufill_gazebo_world/common/worlds/D2.jpg"/>
 			</material>
     		</visual>
     		<collision>
@@ -25,4 +27,7 @@
     		</collision>
   	</link>	
 
+</xacro:macro>
+
+<xacro:edufill_D2 name="edufill_D2" />
 </robot>
